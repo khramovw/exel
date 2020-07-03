@@ -39,7 +39,9 @@ module.exports = {
         hot: isDev,
         contentBase: path.join(__dirname, 'src'),
         watchContentBase: isDev,
-        host: '0.0.0.0'
+        host: '0.0.0.0',
+        compress: true,
+        clientLogLevel: 'silent'
     },
     resolve: {
         extensions: ['.js'],
